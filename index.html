@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Barangay Bagacay Portal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    background: linear-gradient(135deg, #d6d6d6, #f4f4f4);
+    color:#222;
+}
+
+/* HEADER */
+header{
+    background: linear-gradient(to right, #7b0000, #b30000);
+    color:white;
+    padding:30px 20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:10px;
+}
+
+/* NAV */
+nav{
+    background:#3f3f3f;
+    padding:12px;
+    text-align:center;
+    box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffb3b3;
+}
+
+/* MAIN */
+.container{
+    padding:80px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+/* ✨ ANIMATED FLOATING CARD */
+.welcome-box{
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(12px);
+    padding:55px;
+    border-radius:22px;
+    max-width:780px;
+    text-align:center;
+
+    border:2px solid rgba(139,0,0,0.4);
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+
+    animation: floatBox 4s ease-in-out infinite;
+    position:relative;
+    overflow:hidden;
+}
+
+/* glowing light effect */
+.welcome-box::before{
+    content:"";
+    position:absolute;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    background: radial-gradient(circle, rgba(139,0,0,0.15), transparent 60%);
+    animation: glowMove 6s linear infinite;
+}
+
+/* floating animation */
+@keyframes floatBox{
+    0%{
+        transform: translateY(0px);
+        box-shadow:0 15px 40px rgba(0,0,0,0.25);
+    }
+    50%{
+        transform: translateY(-12px);
+        box-shadow:0 25px 60px rgba(139,0,0,0.25);
+    }
+    100%{
+        transform: translateY(0px);
+        box-shadow:0 15px 40px rgba(0,0,0,0.25);
+    }
+}
+
+/* moving glow */
+@keyframes glowMove{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
+
+/* TEXT */
+h2{
+    color:#8b0000;
+    font-size:30px;
+    margin-bottom:20px;
+    position:relative;
+    z-index:1;
+}
+
+p{
+    font-size:16px;
+    line-height:1.9;
+    color:#333;
+    position:relative;
+    z-index:1;
+}
+
+/* FOOTER */
+footer{
+    background: linear-gradient(to right, #7b0000, #b30000);
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:50px;
+    box-shadow:0 -3px 10px rgba(0,0,0,0.2);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <img src="bagacay.jpg" alt="Barangay Logo" class="logo">
+    <h1>Barangay Bagacay Passi City, Iloilo</h1>
+</header>
+
+<nav>
+<a href="index (1).html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="news.html">News</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <div class="welcome-box">
+        <h2>Welcome to Barangay Bagacay</h2>
+
+        <p>
+            A peaceful rural community in Passi City where agriculture, nature, and unity shape everyday life. This barangay is known for its simple lifestyle, strong community cooperation, and dedication to growth and development.
+        </p>
+
+        <p>
+            Residents work together in farming and local activities while preserving traditions that reflect the identity and culture of the community. Despite modernization, the barangay continues to value harmony, simplicity, and collective progress.
+        </p>
+
+        <p>
+            This portal serves as a gateway for information, updates, and services that help strengthen communication and participation within the barangay.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+<p>© 2026 Barangay Bagacay Passi City</p>
+</footer>
+
+</body>
+</html>
