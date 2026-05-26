@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About - Barangay Bagacay Passi City</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background: linear-gradient(135deg, #d6d6d6, #f4f4f4);
+    color:#222;
+}
+
+/* HEADER */
+header{
+    background: linear-gradient(to right, #7b0000, #b30000);
+    color:white;
+    text-align:center;
+    padding:25px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+    margin:0;
+    letter-spacing:1px;
+    font-size:32px;
+}
+
+/* NAVIGATION */
+nav{
+    background:#3f3f3f;
+    padding:14px;
+    text-align:center;
+    box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+
+nav a{
+    color:white;
+    margin:0 18px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffb3b3;
+}
+
+/* CONTAINER */
+.container{
+    padding:35px;
+}
+
+/* TOP SECTION */
+.top-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(10px);
+    padding:28px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* CARD COLORS */
+.history{
+    border-left:8px solid #8b0000;
+}
+
+.vision{
+    border-left:8px solid #555;
+}
+
+.official-card{
+    border-left:8px solid #c40000;
+    margin-top:30px;
+}
+
+/* TITLES */
+.card h2{
+    color:#8b0000;
+    margin-top:0;
+    text-align:center;
+    font-size:28px;
+}
+
+/* PARAGRAPH */
+.card p{
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* LEADERS SECTION */
+.leaders{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:25px;
+    margin-bottom:35px;
+}
+
+/* OFFICIALS GRID */
+.officials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:22px;
+}
+
+/* OFFICIAL BOX */
+.official{
+    background: linear-gradient(to bottom right, #ffffff, #ececec);
+    border-radius:18px;
+    padding:25px 15px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.official:hover{
+    transform:translateY(-8px) scale(1.02);
+    background:linear-gradient(to bottom right, #fff5f5, #ffe5e5);
+}
+
+/* SPECIAL SIZE FOR CAPTAIN + CHAIRPERSON */
+.leaders .official{
+    width:260px;
+}
+
+/* ICON */
+.icon{
+    width:85px;
+    height:85px;
+    margin:auto;
+    border-radius:50%;
+    background: linear-gradient(to bottom right, #8b0000, #d10000);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:38px;
+    color:white;
+    font-weight:bold;
+    margin-bottom:15px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.2);
+}
+
+/* NAME */
+.official h3{
+    margin:10px 0 8px;
+    font-size:17px;
+    color:#7a0000;
+}
+
+/* POSITION */
+.official span{
+    display:inline-block;
+    background:#8b0000;
+    color:white;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:14px;
+    margin-top:5px;
+}
+
+/* FOOTER */
+footer{
+    background: linear-gradient(to right, #7a0000, #b30000);
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:30px;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+
+    .top-section{
+        grid-template-columns:1fr;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .leaders{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>About Bagacay Passi City</h1>
+</header>
+
+<nav>
+<a href="index (1).html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="news.html">News</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+<!-- TOP SECTION -->
+<div class="top-section">
+
+    <!-- HISTORY -->
+    <div class="card history">
+        <h2>History</h2>
+        <p>
+            Passi City’s Barangay Bagacay is a rural farming community with a history closely connected to the growth of Passi City. Passi was founded during the Spanish period in 1584 and officially became a pueblo or town in 1766.
+            <br><br>
+            As one of the barangays of Passi, Bagacay developed as an agricultural settlement where families depended mainly on rice farming, sugarcane planting, and other local crops for livelihood.
+            <br><br>
+            The name “Bagacay” is believed to have come from a type of bamboo grass called bagacay, which commonly grows in the Visayas. Throughout the years, the barangay remained a peaceful rural community with strong family ties and agricultural traditions.
+        </p>
+    </div>
+
+    <!-- VISION -->
+    <div class="card vision">
+
+        <h2>Vision</h2>
+        <p>
+            A peaceful, progressive, and self-reliant community where residents are united, responsible, and actively participate in promoting sustainable development, a clean and safe environment, and a better quality of life for present and future generations.
+        </p>
+
+        <h2>Mission</h2>
+        <p>
+            To provide effective and transparent leadership through good governance, promote community unity and agricultural development, maintain peace and order, protect and preserve the environment, and deliver programs and services that improve the social, economic, and overall well-being of every resident.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- OFFICIALS -->
+<div class="card official-card">
+
+<h2>Barangay Officials</h2>
+
+<!-- CAPTAIN + SK CHAIRPERSON -->
+<div class="leaders">
+
+<div class="official">
+<div class="icon">👤</div>
+<h3>HON. STALLEN CHARLES FUTALAN</h3>
+<span>Barangay Captain</span>
+</div>
+
+<div class="official">
+<div class="icon">👤</div>
+<h3>HON. DON MEG PALMARES</h3>
+<span>SK Chairperson</span>
+</div>
+
+</div>
+
+<!-- OTHER OFFICIALS -->
+<div class="officials">
+
+<div class="official">
+<div class="icon">👤</div>
+<h3>HON. MANUEL M. ANGELADA</h3>
+<span>Kagawad</span>
+</div>
+
+<div class="official">
+<div class="icon">👤</div>
+<h3>HON. ALNIE P. PACARDO</h3>
+<span>Kagawad</span>
+</div>
+
+<div class="official">
+<div class="icon">👤</div>
+<h3>HON. RYAN P. PALOMILLO</h3>
+<span>Kagawad</span>
+</div>
+
+<div class="official">
+<div class="icon">👤</div>
+<h3>HON. EDWIN P. SAPILO</h3>
+<span>Kagawad</span>
+</div>
+
+<div class="official">
+<div class="icon">👤</div>
+<h3>HON. ALFREDO P. RODRIGUES</h3>
+<span>Kagawad</span>
+</div>
+
+<div class="official">
+<div class="icon">👤</div>
+<h3>HON. JOEFRY P. PADURA</h3>
+<span>Kagawad</span>
+</div>
+
+<div class="official">
+<div class="icon">👤</div>
+<h3>HON. DAYDEN P. LIMAS</h3>
+<span>Kagawad</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Barangay Bagacay Passi City
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>News & Announcements</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background: linear-gradient(135deg, #d6d6d6, #f4f4f4);
+    color:#222;
+}
+
+/* HEADER + FOOTER */
+header,footer{
+    background: linear-gradient(to right, #7b0000, #b30000);
+    color:white;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* NAV */
+nav{
+    background:#3f3f3f;
+    padding:12px;
+    text-align:center;
+    box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffb3b3;
+}
+
+/* CONTAINER */
+.container{
+    padding:35px;
+}
+
+/* GRID */
+.news-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+/* NEWS CARD */
+.news{
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(10px);
+    padding:18px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+    border-left:6px solid #8b0000;
+}
+
+.news:hover{
+    transform: translateY(-6px);
+    box-shadow:0 12px 25px rgba(139,0,0,0.25);
+}
+
+/* IMAGE */
+.news img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:14px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.news img:hover{
+    opacity:0.9;
+}
+
+/* TEXT */
+.news h3{
+    margin:12px 0 5px;
+    color:#8b0000;
+}
+
+.date{
+    color:#666;
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.news p{
+    font-size:14px;
+    color:#333;
+    line-height:1.6;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+    .news-grid{
+        grid-template-columns:1fr;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+}
+
+/* LIGHTBOX */
+#lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+#lightbox img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(255,255,255,0.2);
+}
+
+#lightbox span{
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:40px;
+    color:white;
+    cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>News & Announcements</h1>
+</header>
+
+<nav>
+<a href="index (1).html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="news.html">News</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+<div class="news-grid">
+
+<!-- NEWS 1 -->
+<div class="news">
+<img src="b1.png" onclick="openImg(this.src)">
+<h3>Bagacay Christmas Party 2025</h3>
+<p class="date">December 26, 2025</p>
+</div>
+
+<!-- NEWS 2 -->
+<div class="news">
+<img src="b2.png" onclick="openImg(this.src)">
+<h3>Brgy. Bagacay Wins Against Team Libo-o</h3>
+<p class="date">December 8, 2025</p>
+</div>
+
+<!-- NEWS 3 -->
+<div class="news">
+<img src="b3.png" onclick="openImg(this.src)">
+<h3>Covered Gym & Evacuation Center Completed</h3>
+<p class="date">September 8, 2025</p>
+</div>
+
+<!-- NEWS 4 -->
+<div class="news">
+<img src="b4.png" onclick="openImg(this.src)">
+<h3>International ASEAN & National Youth Day 2025</h3>
+<p class="date">August 12, 2025</p>
+</div>
+
+<!-- NEWS 5 -->
+<div class="news">
+<img src="b5.png" onclick="openImg(this.src)">
+<h3>Interzone Basketball League 2025</h3>
+<p class="date">August 7, 2025</p>
+</div>
+
+<!-- NEWS 6 -->
+<div class="news">
+<img src="b6.png" onclick="openImg(this.src)">
+<h3>Pintados 2025 Celebration</h3>
+<p class="date">May 28, 2025</p>
+</div>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeImg()">
+    <span>&times;</span>
+    <img id="lightbox-img">
+</div>
+
+<script>
+
+function openImg(src){
+    document.getElementById("lightbox").style.display="flex";
+    document.getElementById("lightbox-img").src=src;
+}
+
+function closeImg(){
+    document.getElementById("lightbox").style.display="none";
+}
+
+</script>
+
+<footer>
+© 2026 Barangay Bagacay Passi City
+</footer>
+
+</body>
+</html>
